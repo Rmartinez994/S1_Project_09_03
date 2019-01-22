@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Case Problem 3
+
+      CSS Demo Form
+      Author: Rafael Martinez 
+      Date: 1/22/19   
+
+      Filename:   wm_demo.html
+
+   -->
+
+    <meta charset="utf-8" />
+    <title>CSS Styles Demo</title>
+    <link href="wm_reset.css" rel="stylesheet" />
+    <link href="wm_styles.css" rel="stylesheet" />
+    <link href="wm_forms.css" rel="stylesheet" />
+    <script src="wm_script.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <img src="wm_logo.png" alt="WidgetMage" />
+        <nav class="horizontal">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tutorials</a></li>
+                <li><a href="#">Widgets</a></li>
+                <li><a href="#">Forums</a></li>
+                <li><a href="#">Demos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav class="vertical">
+        <ul>
+            <li class="newgroup"><a href="#">Home</a></li>
+            <li class="newgroup"><a href="#">Animations</a></li>
+            <li><a href="#">Buttons</a></li>
+            <li><a href="#">Calendars</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">Drag &amp; Drop</a></li>
+            <li><a href="#">Image Tools</a></li>
+            <li><a href="#">Icons</a></li>
+            <li><a href="#">Layout Tools</a></li>
+            <li><a href="#">List Boxes</a></li>
+            <li><a href="#">Menus</a></li>
+            <li><a href="#">Popups</a></li>
+            <li><a href="#">Ribbons</a></li>
+            <li><a href="#">Sliders</a></li>
+            <li><a href="#">Spinners</a></li>
+            <li><a href="#">Toolbars</a></li>
+            <li><a href="#">Tooltips</a></li>
+            <li><a href="#">Tree Views</a></li>
+            <li class="newgroup"><a href="#">Tutorials</a></li>
+            <li><a href="#">Tips &amp; Tricks</a></li>
+            <li><a href="#">White Papers</a></li>
+            <li><a href="#">User Forums</a></li>
+            <li><a href="#">External Links</a></li>
+            <li class="newgroup"><a href="#">Demonstrations</a></li>
+            <li class="newgroup"><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>CSS Demo</h1>
+        <form>
+            <textarea name="sampleText" id="sampleBox" type="text" placeholder="Enter sample text and press Tab key"
+                autofocus tabindex="1" wrap="hard"></textarea>
+            <!-- What these lines of code do is create a text box where you can type sample text in the text box.  -->
+
+            <p> Select the CSS style values form the form below and preview the effect on the sample text in the
+                preview box.
+            </p>
+            <!-- This line of code just add this text to the top of the webpage.  -->
+
+
+
+
+
+
+            <fieldset>
+                <legend>Fonts</legend>
+                <label for="fontfamily">Font Family</label>
+                <select name="Font Family" id="fontfamily">
+                    <optgroup label="Generic">
+                        <option value="default">default</option>
+                        <option value="serif">serif</option>
+                        <option value="sans-serif">sans-serif</option>
+                        <option value="monospace">monospace</option>
+                        <option value="cursive">cursive</option>
+                        <option value="fantasy">fantasy</option>
+                    <optgroup label="Specific fonts"></optgroup>
+                    <option value="arial">Arial</option>
+                    <option value="book-antiqua">Bookantiqua</option>
+                    <option value="courier-new">Courier new</option>
+                    <option value="geneva">Geneva</option>
+                    <option value="helvetica">Helvetica</option>
+                    <option value="impact">Impact</option>
+                    <option value="palatino">Palatino</option>
+                    <option value="tahoma">Tahoma</option>
+                    <option value="times-new-roman">Times New Roman</option>
+                    </optgroup>
+                </select>
+                <!-- What all these lines of code add to the webpage is that of diffrent options of font styles for the user to choose from. Also these lines of code make it where you see the genertic fonts in one section and the spacial font is a another -->
+                <label for="fontstyle">Font Style</label>
+                <select name="fontstyle" id="fontstyle">
+                    <option value="normal">normal</option>
+                    <option value="italic">italic</option>
+                    <option value="oblique" selected>oblique</option>
+                </select>
+                <!-- These lines of code add the option to choose your font style and those options are normal, italics, and oblique. -->
+
+
+
+                <label for="fontweight">Font Weight</label>
+                <select name="fontweight" id="fontweight">
+                    <option value="normal">normal</option>
+                    <option value="bold">bold</option>
+                </select>
+
+
+
+
+    </section>
+
+
+</body>
+
+</html>
