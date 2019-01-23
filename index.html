@@ -76,14 +76,11 @@
                 autofocus tabindex="1" wrap="hard"></textarea>
             <!-- What these lines of code do is create a text box where you can type sample text in the text box.  -->
 
+
             <p> Select the CSS style values form the form below and preview the effect on the sample text in the
                 preview box.
             </p>
             <!-- This line of code just add this text to the top of the webpage.  -->
-
-
-
-
 
 
             <fieldset>
@@ -119,15 +116,86 @@
                 <!-- These lines of code add the option to choose your font style and those options are normal, italics, and oblique. -->
 
 
-
                 <label for="fontweight">Font Weight</label>
                 <select name="fontweight" id="fontweight">
                     <option value="normal">normal</option>
                     <option value="bold">bold</option>
                 </select>
+                <!-- These lines of code give the user the option of choosing a font weight of normal or bold. -->
 
 
+                <label for="textdecoration">Text Decoration</label>
+                <select name="textdecoration" id="textdecoration">
+                    <option value="none">none</option>
+                    <option value="line-through">line-through</option>
+                    <option value="overline">overline</option>
+                    <option value="underline">underline</option>
+                </select>
+                <!-- These lines of code add the option of adding diffrent text decoration for the user to choose from.  -->
 
+
+                <label for="texttransform">Text Transform</label>
+                <select name="texttransform" id="texttransform">
+                    <option value="none">none</option>
+                    <option value="capitalize">capitalize</option>
+                    <option value="lowercase">lowercase</option>
+                    <option value="uppercase">uppercase</option>
+                </select>
+                <!-- What all these lines of code mean is it creates a drop down menu for the user to choose what text transformation they want.  -->
+
+
+                <label for="fontvariant">Font Varient</label>
+                <select name="fontvariant" id="fontvariant">
+                    <option value="normal">normal</option>
+                    <option value="small-caps">small-caps</option>
+                </select>
+            </fieldset>
+            <!-- These lines of code just add the option for the user to choose the font varient they want. -->
+
+
+            <fieldset>
+                <legend>Colors</legend>
+                <label for="color">Font Color (hexadecimal)</label>
+                <input name="color" id="color" value="#000000" type="color" />
+                <label for="backgroundcolor">Background Color (hexadecimal)
+                </label>
+                <input name="backgroundcolor" id="backgroundcolor" value="#FFFFFF" type="color" placeholder="#rrggbb" />
+            </fieldset>
+            <!-- What all these lines of code do is give the option for the user to change the color for the font and background.   -->
+
+
+            <fieldset>
+                <legend>Sizes</legend>
+                <label for="fontsize">Font Size (px)</label>
+                <div class="slider">
+                    8 <input name="fontsize" id="fontSize" type="range" value="14" step="1" min="8" max="40" /> 40
+                </div>
+                <label for="letterspacing">Letter Spacing (px)</label>
+                <div class="slider">
+
+                    0 <input name="letterspacing" id="letterspacing" type="range" value="0" step="1" min="0" max="10" />
+                    10
+                </div>
+
+                <label for="wordspacing">Word Spacing (px)</label>
+                <div class="slider">
+                    0 <input name="wordspacing" id="wordspacing" type="range" value="0" step="1" min="0" max="10" />10
+                </div>
+                <label for="lineheight">Line Height (px)</label>
+                <div class="slider">
+                    0 <input name="lineheight" id="lineheight" type="range" value="1" step="0.2" min="0" max="4" />4
+                </div>
+
+                <label for="textindent">Text Indent (px)</label>
+                <div class="slider">
+
+                    0<input name="textindent" id="textindent" type="range" value="0" step="1" min="0" max="10" />10
+                </div>
+
+            </fieldset>
+
+        </form>
+        <!-- What all these lines of code do is make slider for the font size, letter spaceing and much more. So basically the user can mess with slider until they are satisfied with the options they have choosen.   -->
 
     </section>
 
